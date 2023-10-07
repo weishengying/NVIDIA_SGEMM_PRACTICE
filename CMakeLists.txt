@@ -27,7 +27,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 # 配置待编译的源文件路径
 aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC)
 # 可执行文件输出路径
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR})
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build)
 # 生成可执行文件
 CUDA_ADD_EXECUTABLE(sgemm sgemm.cu ${SRC})
 

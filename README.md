@@ -58,8 +58,9 @@ NVIDIA_SGEMM_PRACTICE                                   # 根目录
 2. 配置矩阵计算最大尺寸
 > 在`sgemm.cu:16`中修改`size_len`，建议初次运行设置为16，过大尺寸可能导致电源超负荷主机重启；
 3. 编译
-`cd build && cmake .. && make`
+`mkdir build && cd build && cmake .. && make`
 4. 运行run.sh，统计各个核函数计算效率，结果保存在test目录；
+`cd .. && bash run.sh`
 5. 计算效率折线绘图
 
 > `python plot.py 0 1`表示绘制CUBLAS和kernel_1计算效率对比图；
